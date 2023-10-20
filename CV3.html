@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>My CV</title>
+
+    <!-- font roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        h2 {
+            font-weight: bolder;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+
+
+        }
+
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0.5;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 900px;
+
+
+            overflow: hidden;
+            border-radius: 50px;
+            border: 6px solid #1b1616;
+        }
+
+
+        /* uer in4 */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #ccc;
+
+        }
+
+        .photo-container {
+            text-align: center;
+            margin-top: -58px;
+        }
+
+        .header {
+            background: #807979;
+            padding: 20px;
+            width: auto;
+            height: 150px;
+        }
+
+        /* mail */
+        /* Remove list-style (bullets/numbers) from the list items */
+        .in4-ul {
+            list-style: none;
+        }
+
+        /* Style the email addresses within the 'email-list' class */
+        .email-list {
+            /* Remove bullets for this list item */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the individual email addresses */
+        .email-list i.bx-envelope {
+            /* margin-right: 5px; */
+            font-weight: bold;
+
+        }
+
+        /* Optionally, you can add hover styles for email addresses */
+        .bx:hover {
+            text-decoration: underline;
+            /* Underline the email address on hover */
+            color: #FF0000;
+            /* Change the color on hover (red in this case) */
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <div class="bg-video">
+        <video autoplay muted loop class="bg-video">
+            <source src="Snowfall in Forest Live Wallpaper 4K.mp4" type="video/mp4">
+        </video>
+        <div class="bg-overlay"></div>
+    </div>
+
+
+
+
+    <div class="card" id="content">
+        <div class="row">
+            <div class="col min-vh-100 p-4">
+                <div class="container mt-5">
+                    <div class="my-row row">
+                        <!-- Column 1: People information -->
+                        <div class="my-column1 col-md-5" style="border: solid #807979;">
+
+                            <div class="photo-container">
+                                <img class="profile-img" src="avatarchungfb.jpg">
+                            </div>
+                            <div class="content">
+                                <h2>Objective</h2>
+                                <ul>
+                                    <li>Short Term: Looking for an Android intern position.</li>
+                                    <li>Long Term: Become a Engineering Manager for next 5, 6 years</li>
+                                </ul>
+                                <h2>Personal Information</h2>
+                                <ul class="in4-ul">
+                                    <!-- <li>
+                                        <i class='bx bx-calendar'></i>
+                                        Jun 2003
+                                    </li> -->
+                                    <li>
+                                        <i class='bx bxs-map'></i>
+                                        <span>NinhBinh, VietNam</span>
+                                    </li>
+                                    <li class="email-list">
+                                        <i class='bx bx-envelope'></i>
+                                        <span>chungdthe176077@fpt.edu.vn</span>
+                                    </li>
+                                    <li class="email-list">
+                                        <i class='bx bx-envelope'></i>
+                                        <span>chungdoanwork03nb@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-contact'></i>
+                                        <span>0949.602.355</span>
+                                    </li>
+                                </ul>
+                                <h2>Skills</h2>
+                                <p><strong>Program Languages:</strong></p>
+                                <ul style="margin-top: -15px !important;">
+                                    <li>Java SE, Java EE: 4 semesters</li>
+                                    <li>HTML, CSS, JavaScript: 3 semester</li>
+                                </ul>
+                                <p><strong>Framework/lib:</strong></p>
+                                <ul style="margin-top: -15px !important;">
+                                    <li>ReactJS, JQuery: 1 semester</li>
+                                    <li>Boostrap v4.6, v5.0: 3 semesters</li>
+                                </ul>
+                                <p><strong>Database:</strong><span style="text-decoration: none;"> MS SQL: 3
+                                        semesters</span></p>
+
+                                <p><strong>Other technical skills: </strong><span>Git/Github, Figma</span></p>
+                                <p><strong>Soft skill: </strong><span>Hard work, strong in teamwork and time
+                                        management.</span></p>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Column 2: his skill -->
+                        <div class=" my-column1 col-md-7">
+                            <div style="margin-left: 30px;">
+                                <div class="namearea" style="margin-top: -69px; align-items: center;">
+                                    <h1 style="font-weight: bolder;">DOAN THANH CHUNG</h1>
+                                    <button id="showButton">Show</button>
+                                    <h6 style="font-weight: bolder;">Front-End Developer (Internship)</h6>
+                                </div>
+
+                                <div>
+                                    <h2 style="margin-top:20px">Education</h2>
+                                    <h6 style="font-weight: bolder;">FPT University (Hanoi Campus)</h6>
+                                    <p> Sofrware Engineering | September 2021 - Now</p>
+                                    <ul style="margin-top: -15px !important;">
+                                        <li>100% Scholaship</li>
+                                        <li>GPA: 7.4/10</li>
+                                        <li>Semester: 5/9</li>
+                                    </ul>
+
+                                </div>
+                                <!--================================ PROJECT =========================================-->
+                                <div>
+                                    <h2 style="margin-top:20px">Projects</h2>
+                                    <h5 style="font-weight: bolder; color: #536ec7; display: inline-block;">Insurance
+                                        Manage System</h5>
+                                    <span style="margin-left: 98px;">Semester: 5/9</span>
+                                    <br>
+                                    <i class='bx bxl-github' style="font-size: 25px;"></i>
+                                    <span>https://github.com/DoanThanhChung-HE176077/Group5-InsuranceManageSystem</span>
+                                    <ul>
+                                        <li><strong>A webapp</strong> allows users to register and manage insurance
+                                            contracts. </li>
+                                        <li>
+                                            <strong>Tech stacks: </strong>MVC model, Tomcat 10, Java JDBC, Servlet,
+                                            JQuery, Boostrap
+                                            v5.0, MS SQL.
+                                        </li>
+                                        <li>
+                                            <strong>Roles: </strong>Team lead, Developer.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // JavaScript to toggle the visibility of the content and change button text
+            const showButton = document.getElementById('showButton');
+            const content = document.getElementById('content');
+
+            showButton.addEventListener('click', () => {
+                if (content.style.display === 'none') {
+                    content.style.display = 'block';
+                    showButton.textContent = 'X'; // Change the button text to 'X'
+                } else {
+                    content.style.display = 'none';
+                    showButton.textContent = 'Show'; // Change the button text back to 'Show'
+                }
+            });
+        </script>
+</body>
+
+</html>
