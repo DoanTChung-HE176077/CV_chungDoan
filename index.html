@@ -64,8 +64,10 @@
             z-index: 1;
         }
 
-        .card {
-            /* #e1cfac; -> no night light */
+        /* =================== */
+
+        /* #e1cfac; -> no night light */
+        /* .card {
             background-color: #fcba70;
             padding: 20px;
             margin: 50px auto;
@@ -73,7 +75,36 @@
             overflow: hidden;
             border-radius: 0px;
             border: 3px solid #1b1616;
+        } */
+
+        .card {
+            background-color: #fcba70;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 900px;
+            overflow: hidden;
+            border-radius: 0px;
+            border: 3px solid #1b1616;
+            display: none;
+            /* Ban đầu ẩn card */
         }
+
+        .show-hide-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+
+        /* =================== */
 
         .profile-img {
             width: 200px;
@@ -123,6 +154,8 @@
         <div class="bg-overlay"></div>
     </div>
 
+    <!-- Show/Hide Button -->
+    <button class="show-hide-btn" id="toggleCardBtn">Show CV</button>
 
     <div class="card" id="content">
         <div class="row">
@@ -389,6 +422,19 @@
                 Remember to protect your <strong> eyes </strong>when using the computer for a long time.
             </p>
         </div>
+
+        <script>
+            document.getElementById("toggleCardBtn").addEventListener("click", function () {
+                const card = document.getElementById("content");
+                if (card.style.display === "none" || card.style.display === "") {
+                    card.style.display = "block";
+                    this.innerText = "Hide CV";
+                } else {
+                    card.style.display = "none";
+                    this.innerText = "Show CV";
+                }
+            });
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
